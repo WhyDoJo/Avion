@@ -1,12 +1,94 @@
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Avion</title>
-		<link rel="stylesheet" href="src/css/main.css" />
-	</head>
-	<body>
-		<button class="btn">asd</button>
-	</body>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avion</title>
+    <link rel="stylesheet" href="src/css/main.css" />
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__top">
+        <div class="container header__container header__top-container">
+          <a href="/" class="header__logo">
+            <img class="logo" src="src/img/logo.svg" alt="Avion logo" />
+          </a>
+
+          <div class="header__details">
+            <ul class="header__list list-reset">
+              <li class="header__item">
+                <a href="#" class="header__link">About us</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Contact</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Blog</a>
+              </li>
+            </ul>
+
+            <div class="header__buttons">
+              <button class="header__button btn-reset" aria-label="search">
+                <svg class="icon">
+                  <use xlink:href="src/icon/sprite.svg#search"></use>
+                </svg>
+              </button>
+
+              <button class="header__button btn-reset" aria-label="cart">
+                <svg class="icon">
+                  <use xlink:href="src/icon/sprite.svg#cart"></use>
+                </svg>
+              </button>
+
+              <button class="header__button btn-reset" aria-label="profile">
+                <svg class="icon">
+                  <use xlink:href="src/icon/sprite.svg#profile"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="header__bottom-container header__container container">
+          <nav class="nav">
+            <ul class="nav__list list-reset">
+              <li class="nav__item">
+                <a class="nav__link" href="#">All Products</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Plan pots</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Ceramics</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Tables</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Chairs</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Crockery</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Tableware</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Cutlery</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

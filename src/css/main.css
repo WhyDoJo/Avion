@@ -10,3 +10,6 @@
 @import url("./blocks/_logo.css");
 @import url("./blocks/_header.css");
 @import url("./blocks/_nav.css");
+
+/* MAIN */
+@import url("./blocks/_hero.css");

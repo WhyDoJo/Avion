@@ -9,22 +9,22 @@
   background-position: left top;
   background-size: 24px 24px;
   background-repeat: no-repeat;
-}
 
-.benefits__item--next {
-  background-image: url("../../icon/benefits-1.svg");
-}
+  &[data-icon="next"] {
+    background-image: url("../../icon/benefits-1.svg");
+  }
 
-.benefits__item--made {
-  background-image: url("../../icon/benefits-2.svg");
-}
+  &[data-icon="made"] {
+    background-image: url("../../icon/benefits-2.svg");
+  }
 
-.benefits__item--prices {
-  background-image: url("../../icon/benefits-3.svg");
-}
+  &[data-icon="prices"] {
+    background-image: url("../../icon/benefits-3.svg");
+  }
 
-.benefits__item--recycled {
-  background-image: url("../../icon/benefits-4.svg");
+  &[data-icon="recycled"] {
+    background-image: url("../../icon/benefits-4.svg");
+  }
 }
 
 .benefits__subtitle {

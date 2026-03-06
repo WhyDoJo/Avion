@@ -1,12 +1,9 @@
 .product {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 24px;
-}
-
-.product__top {
-  position: relative;
 }
 
 .product__content {
@@ -27,6 +24,12 @@
 
 .product__link {
   color: inherit;
+}
+
+.product__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 
 .product__price {

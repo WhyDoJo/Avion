@@ -14,8 +14,12 @@
   font-size: 32px;
 }
 
-.title--centered {
-  text-align: center;
+.title--large-xl {
+  font-size: 36px;
+}
+
+.title--mb-small-xs {
+  margin-bottom: 12px;
 }
 
 .title--mb-small {
@@ -24,4 +28,8 @@
 
 .title--mb-large {
   margin-bottom: 50px;
+}
+
+.title--centered {
+  text-align: center;
 }

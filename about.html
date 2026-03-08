@@ -8,6 +8,20 @@
     <script src="src/js/main.js" defer></script>
   </head>
   <body class="page__body">
+    <div class="notice">
+      <svg class="icon">
+        <use xlink:href="src/icon/sprite.svg#car"></use>
+      </svg>
+      <div class="notice__text">
+        Free delivery on&nbsp;all orders over &pound;50 with code easter
+        checkout
+      </div>
+      <button class="notice__close btn-reset" aria-label="close notice">
+        <svg class="icon icon--large">
+          <use xlink:href="src/icon/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
     <header class="header">
       <div class="header__top">
         <div class="container header__container header__top-container">
@@ -93,33 +107,16 @@
     </header>
 
     <main class="main">
-      <section class="hero">
+      <section class="about-hero">
         <div class="container">
-          <div class="hero__content">
-            <div class="hero__text">
-              <h1 class="hero__title">
-                The furniture brand for the future, with timeless designs
-              </h1>
-
-              <a class="btn btn--theme-dark hero__link" href="#"
-                >View collection</a
-              >
-              <p class="hero__description">
-                A&nbsp;new era in&nbsp;eco friendly furniture with Avelon, the
-                French luxury retail brand with nice fonts, tasteful colors and
-                a&nbsp;beautiful way to&nbsp;display things digitally using
-                modern web technologies.
-              </p>
-            </div>
-
-            <img
-              class="hero__image"
-              src="src/img/hero-image.jpg"
-              srcset="src/img/hero-image_2x.jpg 2x"
-              width="520"
-              height="574"
-              alt="Chairs"
-            />
+          <div class="about-hero__content">
+            <h1 class="about-hero__title">
+              A&nbsp;brand built on&nbsp;the love of&nbsp;craftmanship, quality
+              and outstanding customer service
+            </h1>
+            <a href="#" class="about-hero__btn btn btn--theme-light"
+              >View our products</a
+            >
           </div>
         </div>
       </section>

@@ -5,6 +5,7 @@
 @import url("_settings.css");
 
 /* BLOCK */
+@import url("./blocks/_stepper.css");
 @import url("./blocks/_icon.css");
 @import url("./blocks/_btn.css");
 @import url("./blocks/_social.css");
@@ -34,3 +35,9 @@
 @import url("./blocks/_catalog.css");
 @import url("./blocks/_filters.css");
 @import url("./blocks/_custom-checkbox.css");
+
+/* PRODUCT */
+@import url("./blocks/_product-info.css");
+
+/* CART */
+@import url("./blocks/_cart.css");

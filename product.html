@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avion</title>
+    <link rel="stylesheet" href="src/css/main.css" />
+    <script src="src/js/main.js" defer></script>
+  </head>
+  <body class="page__body">
+    <div class="notice">
+      <svg class="icon">
+        <use xlink:href="src/icon/sprite.svg#car"></use>
+      </svg>
+      <div class="notice__text">
+        Free delivery on&nbsp;all orders over &pound;50 with code easter
+        checkout
+      </div>
+      <button class="notice__close btn-reset" aria-label="close notice">
+        <svg class="icon icon--large">
+          <use xlink:href="src/icon/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <header class="header">
+      <div class="header__top">
+        <div class="container header__container header__top-container">
+          <a href="/" class="header__logo">
+            <img class="logo" src="src/img/logo.svg" alt="Avion logo" />
+          </a>
+
+          <div class="header__details">
+            <ul class="header__list list-reset">
+              <li class="header__item">
+                <a href="#" class="header__link">About us</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Contact</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Blog</a>
+              </li>
+            </ul>
+
+            <div class="header__buttons">
+              <button class="header__button btn-reset" aria-label="search">
+                <svg class="icon">
+                  <use xlink:href="src/icon/sprite.svg#search"></use>
+                </svg>
+              </button>
+
+              <button class="header__button btn-reset" aria-label="cart">
+                <svg class="icon">
+                  <use xlink:href="src/icon/sprite.svg#cart"></use>
+                </svg>
+              </button>
+
+              <button class="header__button btn-reset" aria-label="profile">
+                <svg class="icon">
+                  <use xlink:href="src/icon/sprite.svg#profile"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <div class="header__bottom-container header__container container">
+          <nav class="nav">
+            <ul class="nav__list list-reset">
+              <li class="nav__item">
+                <a class="nav__link" href="#">All Products</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Plan pots</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Ceramics</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Tables</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Chairs</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Crockery</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Tableware</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#">Cutlery</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="product-info">
+        <div class="container">
+          <div class="product-info__content">
+            <div class="product-info__image">
+              <img
+                src="src/img/product.jpg"
+                srcset="src/img/product_2x.jpg 2x"
+                width="607"
+                height="661"
+                aria-label="true"
+                alt="Chair"
+              />
+            </div>
+
+            <div class="product-info__text">
+              <div class="product-info__top">
+                <h1 class="product-info__title">The Dandy Chair</h1>
+                <div class="product-info__price">£250</div>
+              </div>
+
+              <div class="product-info__item">
+                <h2 class="product-info__subtitle">Product description</h2>
+                <p class="product-info__descr">
+                  A&nbsp;timeless design, with premium materials features
+                  as&nbsp;one of&nbsp;our most popular and iconic pieces. The
+                  dandy chair is&nbsp;perfect for any stylish living space with
+                  beech legs and lambskin leather upholstery.
+                </p>
+              </div>
+
+              <div class="product-info__item">
+                <h2 class="product-info__subtitle">Dimensions</h2>
+                <dl class="product-info__chars">
+                  <div class="product-info__chars-item">
+                    <dt class="product-info__chars-caption">Height</dt>
+                    <dd class="product-info__chars-text">110cm</dd>
+                  </div>
+                  <div class="product-info__chars-item">
+                    <dt class="product-info__chars-caption">Width</dt>
+                    <dd class="product-info__chars-text">75cm</dd>
+                  </div>
+                  <div class="product-info__chars-item">
+                    <dt class="product-info__chars-caption">Depth</dt>
+                    <dd class="product-info__chars-text">50cm</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="product-info__item">
+                <h2 class="product-info__subtitle">Quantitity</h2>
+                <div class="stepper">
+                  <button
+                    class="stepper__btn stepper__btn--minus stepper__btn--disabled btn-reset"
+                    aria-label="Decrease quantity"
+                  >
+                    -
+                  </button>
+                  <input
+                    class="stepper__input"
+                    min="1"
+                    max="105"
+                    value="1"
+                    type="number"
+                  />
+                  <button
+                    class="stepper__btn stepper__btn--plus btn-reset"
+                    aria-label="Increase quantity"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-info__btns">
+                <button class="btn btn--theme-darker">Add to cart</button>
+                <button class="btn btn--theme-white">Save to favorites</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="container">
+          <h2 class="products__title title title--large title--mb-small">
+            You might also love these
+          </h2>
+
+          <ul class="products__list list-reset grid">
+            <li class="products__item products__item--big">
+              <article class="product">
+                <div class="product__top">
+                  <img
+                    class="product__image"
+                    src="src/img/product-5.jpg"
+                    srcset="src/img/product-5_2x.jpg 2x"
+                    width="630"
+                    height="375"
+                    loading="lazy"
+                    aria-hidden="true"
+                    alt="Chair"
+                  />
+                </div>
+
+                <div class="product__content">
+                  <h3 class="product__title">
+                    <a href="#" class="product__link">The Poplar suede sofa</a>
+                  </h3>
+                  <span class="product__price">£980</span>
+                </div>
+              </article>
+            </li>
+
+            <li class="products__item">
+              <article class="product">
+                <div class="product__top">
+                  <img
+                    class="product__image"
+                    src="src/img/product-6.jpg"
+                    srcset="src/img/product-6_2x.jpg 2x"
+                    width="305"
+                    height="375"
+                    loading="lazy"
+                    aria-hidden="true"
+                    alt="Chair"
+                  />
+                </div>
+
+                <div class="product__content">
+                  <h3 class="product__title">
+                    <a href="#" class="product__link">Rustic Vase Set</a>
+                  </h3>
+                  <span class="product__price">£155</span>
+                </div>
+              </article>
+            </li>
+
+            <li class="products__item">
+              <article class="product">
+                <div class="product__top">
+                  <img
+                    class="product__image"
+                    src="src/img/product-7.jpg"
+                    srcset="src/img/product-7_2x.jpg 2x"
+                    width="305"
+                    height="375"
+                    loading="lazy"
+                    aria-hidden="true"
+                    alt="Chair"
+                  />
+                </div>
+
+                <div class="product__content">
+                  <h3 class="product__title">
+                    <a href="#" class="product__link">The Dandy chair</a>
+                  </h3>
+                  <span class="product__price">£250</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="centered">
+            <a href="#" class="products__btn btn btn--theme-light"
+              >View collection</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits benefits--about">
+        <div class="container">
+          <h2 class="title title--small title--centered title--mb-large">
+            What makes our brand different
+          </h2>
+
+          <ul class="benefits__list list-reset grid">
+            <li class="benefits__item" data-icon="next">
+              <h3 class="benefits__subtitle">Next day as standard</h3>
+              <p class="benefits__descr">
+                Order before 3pm and get your order the next day
+                as&nbsp;standard
+              </p>
+            </li>
+
+            <li class="benefits__item" data-icon="made">
+              <h3 class="benefits__subtitle">Made by true artisans</h3>
+              <p class="benefits__descr">
+                Handmade crafted goods made with real passion and craftmanship
+              </p>
+            </li>
+
+            <li class="benefits__item" data-icon="prices">
+              <h3 class="benefits__subtitle">Unbeatable prices</h3>
+              <p class="benefits__descr">
+                For our materials and quality you won&rsquo;t find better prices
+                anywhere
+              </p>
+            </li>
+
+            <li class="benefits__item" data-icon="recycled">
+              <h3 class="benefits__subtitle">Recycled packaging</h3>
+              <p class="benefits__descr">
+                We&nbsp;use 100% recycled packaging to&nbsp;ensure our footprint
+                is&nbsp;manageable
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter__content">
+            <h2
+              class="newsletter__title title title--mb-small-xs title--large-xl"
+            >
+              Join the club and get the benefits
+            </h2>
+
+            <p class="newsletter__descr">
+              Sign up&nbsp;for our newsletter and receive exclusive offers
+              on&nbsp;new ranges, sales, pop up&nbsp;stores and more
+            </p>
+
+            <form class="newsletter__form form" action="#" method="post">
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+              />
+              <button class="form__btn btn btn--theme-darker" type="submit">
+                Sign up
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top grid">
+          <div class="footer__column">
+            <h2 class="footer__title">Menu</h2>
+            <ul class="footer__list list-reset">
+              <li class="footer__item">
+                <a href="#" class="footer__link">New arrivals</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Best sellers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Recently viewed</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Popular this week</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">All products</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h2 class="footer__title">Categories</h2>
+            <ul class="footer__list list-reset">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Crockery</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Furniture</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Homeware</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Plant pots</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Chairs</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Crockery</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h2 class="footer__title">Our company</h2>
+            <ul class="footer__list list-reset">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Vacancies</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Returns policy</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column footer__column--big">
+            <h3 class="footer__title">Join our mailing list</h3>
+            <form class="footer__form form" action="#" method="post">
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="your@email.com"
+              />
+              <button class="form__btn btn btn--theme-light" type="submit">
+                Sign up
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span class="footer__copyright">Copyright 2022 Avion LTD</span>
+          <ul class="social list-reset">
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <svg class="icon icon--large">
+                  <use xlink:href="src/icon/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

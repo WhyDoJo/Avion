@@ -13,6 +13,19 @@
   border: none;
 }
 
+.form__input:focus {
+  outline: none;
+}
+
+.form__input:focus-visible {
+  outline: 2px dashed var(--primary);
+  outline-offset: var(--outline-offset);
+}
+
+.form__input:active {
+  color: var(--border-dark);
+}
+
 .form__input::placeholder {
   color: rgba(42, 37, 75, 0.2);
 }

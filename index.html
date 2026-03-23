@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avion</title>
     <link rel="stylesheet" href="src/css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/transfer-elements@1.0.7/dist/transfer-elements.min.js"></script>
     <script src="src/js/main.js" defer></script>
   </head>
   <body class="page__body">
@@ -45,6 +46,12 @@
                 <svg class="icon">
                   <use xlink:href="src/icon/sprite.svg#profile"></use>
                 </svg>
+              </button>
+              <button class="btn-reset burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
               </button>
             </div>
           </div>
@@ -282,7 +289,9 @@
             Our popular products
           </h2>
 
-          <ul class="products__list list-reset grid">
+          <ul
+            class="products__list products__list--mobile-slider list-reset grid"
+          >
             <li class="products__item products__item--big">
               <article class="product">
                 <div class="product__top">

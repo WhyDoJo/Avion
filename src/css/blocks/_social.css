@@ -7,4 +7,30 @@
 .social__link {
   display: flex;
   align-items: center;
+  color: var(--white);
+  transition: var(--text-trs);
+}
+
+.social__link svg {
+  fill: currentColor;
+}
+
+.footer__link:focus {
+  outline: none;
+}
+
+.footer__link:focus-visible {
+  outline: 2px dashed var(--white);
+  outline-offset: var(--outline-offset);
+}
+
+@media (any-hover: hover) {
+  .footer__link:hover {
+    color: var(--dark-primary);
+  }
+}
+
+.footer__link:active {
+  color: var(--white);
+  background-color: var(--dark-primary);
 }

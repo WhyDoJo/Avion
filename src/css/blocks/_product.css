@@ -24,12 +24,32 @@
 
 .product__link {
   color: inherit;
+  transition: var(--text-trs);
 }
 
 .product__link::after {
   content: "";
   position: absolute;
   inset: 0;
+}
+
+.product__link:focus {
+  outline: none;
+}
+
+.product__link:focus-visible::after {
+  outline: 2px dashed var(--dark-primary);
+  outline-offset: var(--outline-offset);
+}
+
+@media (any-hover: hover) {
+  .product__link:hover {
+    color: var(--primary);
+  }
+}
+
+.product__link:active {
+  color: var(--border-dark);
 }
 
 .product__price {

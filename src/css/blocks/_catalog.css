@@ -11,6 +11,10 @@
   grid-column: 9 span;
 }
 
+.catalog__mobile-btn {
+  display: none;
+}
+
 .catalog__products {
   --column-gap: 20px;
   --elems: 3;

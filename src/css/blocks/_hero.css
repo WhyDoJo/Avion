@@ -14,12 +14,14 @@
   flex-grow: 1;
 
   background-color: var(--dark-primary);
+  cursor: pointer;
 }
 
 .hero__title {
   margin: 0;
   max-width: 514px;
   font-family: var(--second-family);
+  font-weight: 400;
   color: var(--white);
   font-size: 32px;
   line-height: 140%;
@@ -29,6 +31,10 @@
 
 .hero__link {
   margin-bottom: auto;
+}
+
+.hero__link:focus-visible {
+  outline: 2px dashed var(--white);
 }
 
 .hero__description {

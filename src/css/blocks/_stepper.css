@@ -16,9 +16,11 @@
   font-size: 16px;
   color: var(--dark-primary);
   user-select: none;
+
+  transition: var(--text-trs);
 }
 
-.stepper__btn--disabled {
+.stepper__btn:disabled {
   color: var(--border-grey);
   pointer-events: none;
 }
@@ -38,4 +40,30 @@
   background-color: var(--light-grey);
 }
 
+.stepper__btn:focus {
+  outline: none;
+}
 
+.stepper__btn:focus-visible {
+  outline: 2px dashed var(--dark-primary);
+  outline-offset: var(--outline-offset);
+}
+
+@media (any-hover: hover) {
+  .stepper__btn:hover {
+    color: var(--primary);
+  }
+}
+
+.stepper__btn:active {
+  color: var(--border-grey);
+  background-color: var(--dark-primary);
+}
+
+.stepper__input:focus {
+  outline: none;
+}
+
+.stepper__input:focus-visible {
+  outline: 2px dashed var(--primary);
+}

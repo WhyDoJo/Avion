@@ -5,6 +5,7 @@
 @import url("_settings.css");
 
 /* BLOCK */
+@import url("./blocks/_burger.css");
 @import url("./blocks/_stepper.css");
 @import url("./blocks/_icon.css");
 @import url("./blocks/_btn.css");
@@ -39,5 +40,8 @@
 /* PRODUCT */
 @import url("./blocks/_product-info.css");
 
-/* CART */
+/* MEDIA */
 @import url("./blocks/_cart.css");
+
+/* CART */
+@import url("./blocks/_media.css");

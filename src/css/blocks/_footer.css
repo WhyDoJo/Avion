@@ -35,6 +35,28 @@
 .footer__link {
   font-size: 14px;
   color: var(--white);
+  transition: var(--text-trs);
+}
+
+.footer__link:focus {
+  outline: none;
+}
+
+.footer__link:focus-visible {
+  outline: 2px dashed var(--white);
+  outline-offset: var(--outline-offset);
+}
+
+@media (any-hover: hover) {
+  .footer__link:hover {
+    color: var(--dark-primary);
+    background-color: var(--light-grey);
+  }
+}
+
+.footer__link:active {
+  color: var(--white);
+  background-color: var(--dark-primary);
 }
 
 .footer__form .form__input {

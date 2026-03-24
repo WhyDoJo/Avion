@@ -11,3 +11,5 @@ To run:
 ```bash
 bun live-server
 ```
+
+![Avion](avion.png)
